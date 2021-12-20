@@ -62,7 +62,7 @@ public class RhymersJUnitTest {
 	public void testCountOut() {
 		defaultCountingOutRhymer rhymer = new defaultCountingOutRhymer();
 		final int emptyStackValue = -1;
-
+	
 		int result = rhymer.countOut();
 		Assert.assertEquals(emptyStackValue, result);
 
