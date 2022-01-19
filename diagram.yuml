@@ -1,0 +1,9 @@
+// {type:class}
+// {direction:topDown}
+// {generate:true}
+
+[FIFORhymer]<>-[DefaultRhymersFactory]
+[FIFORhymer]->[DefaultCountingOutRhymer]
+[HanoiRhymer]->[DefaultCountingOutRhymer]
+[IntLinkedList]<>-[Node]
+[DefaultRhymersFactory]<-[RhymersFactory]
