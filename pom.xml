@@ -23,6 +23,13 @@
 	</build>
 	
 	<dependencies>
+
+  		<dependency>
+  			<groupId>com.github.biezhi</groupId>
+  			<artifactId>jdoc</artifactId>
+  			<version>1.0</version>
+  		</dependency>
+
     	<dependency>
       		<groupId>junit</groupId>
       		<artifactId>junit</artifactId>
