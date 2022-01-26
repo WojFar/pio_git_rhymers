@@ -4,14 +4,23 @@ import edu.kis.vh.nursery.DefaultCountingOutRhymer;
 import edu.kis.vh.nursery.HanoiRhymer;
 
 class RhymersDemo {
+    // 1.5.2 usunięto klasę DefaultRhymersFactory
+    // a przez to interface RhymersFactory i folder factory
 
-    //1.5.2 usunięto klasę DefaultRhymersFactory
-    //a przez to interface RhymersFactory i folder factory
+    /**
+     * main method runs testRhymers()
+     * 
+     * @param args
+     */
 
     public static void main(String[] args) {
         testRhymers();
     }
 
+    /**
+     * Creates 4 rhymers: 2 default, FIFO and Hanoi. Counts them in and out printing
+     * the results
+     */
     private static void testRhymers() {
         DefaultCountingOutRhymer[] rhymers = { new DefaultCountingOutRhymer(), new DefaultCountingOutRhymer(),
                 new FIFORhymer(), new HanoiRhymer() };
