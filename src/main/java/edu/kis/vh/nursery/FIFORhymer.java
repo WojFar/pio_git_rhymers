@@ -1,8 +1,11 @@
 package edu.kis.vh.nursery;
 
+import edu.kis.vh.nursery.listAndArray.IntArrayStack;
+import edu.kis.vh.nursery.listAndArray.IntStackList;
+
 public class FIFORhymer extends DefaultCountingOutRhymer {
 
-    public DefaultCountingOutRhymer temp = new DefaultCountingOutRhymer();
+    public IntStackList temp = new DefaultCountingOutRhymer(new IntArrayStack()); //??? nie bardzo wiem czy o to chodziło w poleceniu 2.2.8
 
     @Override
     public int countOut() {
@@ -18,4 +21,12 @@ public class FIFORhymer extends DefaultCountingOutRhymer {
 
         return ret;
     }
+
+	public FIFORhymer() {
+		super();
+	}
+
+	public FIFORhymer(IntStackList intArrayStack) {
+		super(intArrayStack);
+	}
 }

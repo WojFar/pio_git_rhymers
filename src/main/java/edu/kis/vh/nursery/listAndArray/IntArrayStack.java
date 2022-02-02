@@ -1,8 +1,9 @@
-package edu.kis.vh.nursery;
+package edu.kis.vh.nursery.listAndArray;
 
-public class IntArrayStack {
+public class IntArrayStack implements IntStackList {
     private final int n = 12;
     private final int[] numbers = new int[n];
+    private final int ifEmpty = 0;
 
     public int total = -1;
 
@@ -19,16 +20,16 @@ public class IntArrayStack {
         return total == n-1;
     }
 
-    protected int peekABoo() {
+    public int peekABoo() {
         if (callCheck())
-            return -1;
+            return ifEmpty;
         return numbers[total];
     }
 
 
     public int countOut() {
         if (callCheck())
-            return -1;
+            return ifEmpty;
         return numbers[total--];
     }
 }

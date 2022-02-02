@@ -2,6 +2,7 @@ package edu.kis.vh.nursery;
 
 import edu.kis.vh.nursery.DefaultCountingOutRhymer;
 import edu.kis.vh.nursery.HanoiRhymer;
+import edu.kis.vh.nursery.listAndArray.IntStackList;
 
 class RhymersDemo {
     // 1.5.2 usunięto klasę DefaultRhymersFactory
@@ -22,7 +23,7 @@ class RhymersDemo {
      * the results
      */
     private static void testRhymers() {
-        DefaultCountingOutRhymer[] rhymers = { new DefaultCountingOutRhymer(), new DefaultCountingOutRhymer(),
+        IntStackList[] rhymers = { new DefaultCountingOutRhymer(), new DefaultCountingOutRhymer(),
                 new FIFORhymer(), new HanoiRhymer() };
 
         for (int i = 1; i < 15; i++)

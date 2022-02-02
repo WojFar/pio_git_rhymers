@@ -1,11 +1,13 @@
-package edu.kis.vh.nursery.list;
+package edu.kis.vh.nursery.listAndArray;
 
-public class IntLinkedList {
+public class IntLinkedList implements IntStackList {
 
+	private final int ifEmpty = 0;
+	
     Node last;
     int i;
 
-    public void push(int i) {
+    public void countIn(int i) {
         if (last == null)
             last = new Node(i);
         else {
@@ -15,7 +17,7 @@ public class IntLinkedList {
         }
     }
 
-    public boolean isEmpty() {
+    public boolean callCheck() {
         return last == null;
     }
 
@@ -23,15 +25,15 @@ public class IntLinkedList {
         return false;
     }
 
-    public int top() {
-        if (isEmpty())
-            return -1;
+    public int peekABoo() {
+        if (callCheck())
+            return ifEmpty;
         return last.value;
     }
 
-    public int pop() {
-        if (isEmpty())
-            return -1;
+    public int countOut() {
+        if (callCheck())
+            return ifEmpty;
         int ret = last.value;
         last = last.prev;
         return ret;
