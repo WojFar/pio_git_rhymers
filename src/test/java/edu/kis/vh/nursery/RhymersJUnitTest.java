@@ -3,6 +3,7 @@ package edu.kis.vh.nursery;
 import org.junit.Assert;
 import org.junit.Test;
 
+import edu.kis.vh.nursery.factory.ArrayRhymersFactory;
 import edu.kis.vh.nursery.listAndArray.IntStackList;
 
 public class RhymersJUnitTest {
@@ -46,7 +47,7 @@ public class RhymersJUnitTest {
     @Test
     public void testPeekaboo() {
         IntStackList rhymer = new DefaultCountingOutRhymer();
-        final int EMPTY_STACK_VALUE = -1;
+        final int EMPTY_STACK_VALUE = 0; // nie zmieniłem przy 2.2.6
 
         int result = rhymer.peekABoo();
         Assert.assertEquals(EMPTY_STACK_VALUE, result);
@@ -63,7 +64,7 @@ public class RhymersJUnitTest {
     @Test
     public void testCountOut() {
         IntStackList rhymer = new DefaultCountingOutRhymer();
-        final int EMPTY_STACK_VALUE = -1;
+        final int EMPTY_STACK_VALUE = 0; // nie zmieniłem przy 2.2.6
 
         int result = rhymer.countOut();
         Assert.assertEquals(EMPTY_STACK_VALUE, result);
