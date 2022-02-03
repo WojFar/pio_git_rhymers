@@ -1,6 +1,6 @@
 package edu.kis.vh.nursery;
 
-import edu.kis.vh.nursery.listAndArray.IntStackList;
+import edu.kis.vh.nursery.listAndArray.IntStackOrList;
 
 public class HanoiRhymer extends DefaultCountingOutRhymer {
 
@@ -14,8 +14,8 @@ public class HanoiRhymer extends DefaultCountingOutRhymer {
 		super();
 	}
 
-	public HanoiRhymer(IntStackList intArrayStack) {
-		super(intArrayStack);
+	public HanoiRhymer(IntStackOrList intStackOrList) {
+		super(intStackOrList);
 	}
 
 	@Override

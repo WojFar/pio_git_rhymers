@@ -8,22 +8,22 @@ import edu.kis.vh.nursery.listAndArray.IntLinkedList;
 public class ListRhymersFactory implements RhymersFactory {
 
     @Override
-    public DefaultCountingOutRhymer GetFIFORhymer() {
+    public DefaultCountingOutRhymer getFIFORhymer() {
         return new FIFORhymer(new IntLinkedList());
     }
 
     @Override
-    public DefaultCountingOutRhymer GetFalseRhymer() {
+    public DefaultCountingOutRhymer getFalseRhymer() {
         return new DefaultCountingOutRhymer(new IntLinkedList());
     }
 
     @Override
-    public DefaultCountingOutRhymer GetHanoiRhymer() {
+    public DefaultCountingOutRhymer getHanoiRhymer() {
         return new HanoiRhymer(new IntLinkedList());
     }
 
     @Override
-    public DefaultCountingOutRhymer GetStandardRhymer() {
+    public DefaultCountingOutRhymer getStandardRhymer() {
         return new DefaultCountingOutRhymer(new IntLinkedList());
     }
 

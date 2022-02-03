@@ -3,14 +3,11 @@ package edu.kis.vh.nursery;
 import org.junit.Assert;
 import org.junit.Test;
 
-import edu.kis.vh.nursery.factory.ArrayRhymersFactory;
-import edu.kis.vh.nursery.listAndArray.IntStackList;
-
 public class RhymersJUnitTest {
 
     @Test
     public void testCountIn() {
-        IntStackList rhymer = new DefaultCountingOutRhymer();
+        DefaultCountingOutRhymer rhymer = new DefaultCountingOutRhymer();
         int testValue = 4;
         rhymer.countIn(testValue);
 
@@ -20,7 +17,7 @@ public class RhymersJUnitTest {
 
     @Test
     public void testCallCheck() {
-        IntStackList rhymer = new DefaultCountingOutRhymer();
+        DefaultCountingOutRhymer rhymer = new DefaultCountingOutRhymer();
         boolean result = rhymer.callCheck();
         Assert.assertEquals(true, result);
 
@@ -32,7 +29,7 @@ public class RhymersJUnitTest {
 
     @Test
     public void testIsFull() {
-        IntStackList rhymer = new DefaultCountingOutRhymer();
+        DefaultCountingOutRhymer rhymer = new DefaultCountingOutRhymer();
         final int STACK_CAPACITY = 12;
         for (int i = 0; i < STACK_CAPACITY; i++) {
             boolean result = rhymer.isFull();
@@ -46,7 +43,7 @@ public class RhymersJUnitTest {
 
     @Test
     public void testPeekaboo() {
-        IntStackList rhymer = new DefaultCountingOutRhymer();
+        DefaultCountingOutRhymer rhymer = new DefaultCountingOutRhymer();
         final int EMPTY_STACK_VALUE = 0; // nie zmieniłem przy 2.2.6
 
         int result = rhymer.peekABoo();
@@ -63,7 +60,7 @@ public class RhymersJUnitTest {
 
     @Test
     public void testCountOut() {
-        IntStackList rhymer = new DefaultCountingOutRhymer();
+        DefaultCountingOutRhymer rhymer = new DefaultCountingOutRhymer();
         final int EMPTY_STACK_VALUE = 0; // nie zmieniłem przy 2.2.6
 
         int result = rhymer.countOut();
